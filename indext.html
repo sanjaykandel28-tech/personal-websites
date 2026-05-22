@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayush Kandel | Portfolio</title>
+    
+    <!-- TAILWIND CSS: Modern utilities for rapid styling and responsive layout -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- FONTAWESOME: Core library for iconography across social links and profile sections -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GOOGLE FONTS: Distinct typographic choices for headers and clean body copy -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #070a13; /* Dark slate palette background */
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        /* Geometric layout grid overlay */
+        .tech-grid-bg {
+            background-image: radial-gradient(rgba(34, 211, 238, 0.04) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="text-slate-300 antialiased selection:bg-cyan-500 selection:text-slate-900 tech-grid-bg relative min-h-screen">
+
+    <!-- BACKDROP GLOW EFFECTS: Ambient colored accents behind page elements -->
+    <div class="fixed top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-cyan-500/5 rounded-full blur-[120px] pointer-events-none z-0"></div>
+    <div class="fixed bottom-[10%] right-[-5%] w-[45vw] h-[45vw] bg-purple-500/5 rounded-full blur-[140px] pointer-events-none z-0"></div>
+
+    <div class="relative z-10">
+
+        <!-- STICKY TOP HEADER: Anchor navigational access points -->
+        <header class="fixed top-0 left-0 w-full bg-slate-950/40 backdrop-blur-xl z-50 border-b border-slate-900/60">
+            <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
+                <a href="#" class="text-xl font-bold tracking-wider text-white group">
+                    <span>AAYUSH</span><span class="text-cyan-400">.K</span>
+                </a>
+                <nav class="hidden sm:flex space-x-8 text-xs font-semibold uppercase tracking-widest text-slate-400">
+                    <a href="#about" class="hover:text-cyan-400 transition-colors">About Me</a>
+                    <a href="#vision" class="hover:text-cyan-400 transition-colors">My Vision</a>
+                    <a href="#expertise" class="hover:text-cyan-400 transition-colors">Engineering Focus</a>
+                    <a href="#hobbies" class="hover:text-cyan-400 transition-colors">Hobbies</a>
+                    <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+                    <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- INTRODUCTION HERO: Welcome presentation card detailing location and background -->
+        <section class="pt-44 pb-24 max-w-5xl mx-auto px-6 relative">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+                <div class="md:col-span-2 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-cyan-400 bg-cyan-950/40 rounded-full border border-cyan-500/20">
+                        <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-ping"></span> Gaidakot-11, Bhedabari, Nepal
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-6xl font-bold text-white tracking-tight leading-[1.1]">
+                        Namaste! I am <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-500">Aayush Kandel.</span> 🚀
+                    </h1>
+                    <p class="text-base sm:text-lg text-slate-400 font-light max-w-xl leading-relaxed">
+                        A middle-class boy and Computer Engineering student at **Ratna Rajya Secondary School**. Driven by big business dreams, grounded roots, and a love for an easy, creative lifestyle.
+                    </p>
+                    
+                    <div class="flex flex-wrap items-center gap-5 pt-4">
+                        <a href="#projects" class="px-6 py-3 text-xs font-bold uppercase tracking-widest text-slate-950 bg-gradient-to-r from-cyan-400 to-blue-500 hover:opacity-90 rounded-xl transition-all shadow-lg shadow-cyan-500/20 active:scale-95">
+                            Explore Projects
+                        </a>
+                        <div class="flex gap-4 text-lg border-l border-slate-800/80 pl-5 py-1">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-white transition-colors" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-cyan-400 transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-pink-400 transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AVATAR CONTAINER: Configured to display profile visual asset -->
+                <div class="flex justify-center md:justify-end">
+                    <div class="relative group">
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 rounded-[2rem] blur opacity-25 group-hover:opacity-40 transition duration-700"></div>
+                        <div class="relative w-56 h-56 sm:w-64 sm:h-64 rounded-[2rem] overflow-hidden border border-slate-800/60 bg-slate-900">
+                            <!-- Swap the link below with your hosted photo link when ready -->
+                            <img src="profile.jpg.jpg" alt="Aayush Kandel Profile Image" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATISTICAL METRICS DISPLAY PANEL -->
+        <section class="pb-20 max-w-5xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-slate-950/40 backdrop-blur-md border border-slate-900/60 p-6 rounded-2xl">
+                    <span class="text-2xl sm:text-3xl font-bold text-white block mb-1">G-11</span>
+                    <span class="text-[10px] uppercase font-bold tracking-widest text-slate-500 block">Bhedabari Hub</span>
+                </div>
+                <div class="bg-slate-950/40 backdrop-blur-md border border-slate-900/60 p-6 rounded-2xl">
+                    <span class="text-2xl sm:text-3xl font-bold text-cyan-400 block mb-1">RRSS</span>
+                    <span class="text-[10px] uppercase font-bold tracking-widest text-slate-500 block">Computer Engineering</span>
+                </div>
+                <div class="bg-slate-950/40 backdrop-blur-md border border-slate-900/60 p-6 rounded-2xl">
+                    <span class="text-2xl sm:text-3xl font-bold text-purple-400 block mb-1">Grounded</span>
+                    <span class="text-[10px] uppercase font-bold tracking-widest text-slate-500 block">Middle Class Pride</span>
+                </div>
+                <div class="bg-slate-950/40 backdrop-blur-md border border-slate-900/60 p-6 rounded-2xl">
+                    <span class="text-2xl sm:text-3xl font-bold text-pink-400 block mb-1">Future</span>
+                    <span class="text-[10px] uppercase font-bold tracking-widest text-slate-500 block">Business Leader</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- BIOGRAPHY SECTION -->
+        <section id="about" class="py-20 max-w-5xl mx-auto px-6 border-t border-slate-900/60">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-1">
+                    <h2 class="text-xs uppercase tracking-widest text-cyan-400 font-bold mb-2">01 / Roots & Path</h2>
+                    <h3 class="text-2xl font-bold text-white tracking-tight">About Me</h3>
+                </div>
+                <div class="md:col-span-3 text-slate-400 space-y-4 font-light text-base leading-relaxed">
+                    <p>
+                        I belong to **Gaidakot-11, Bhedabari**. Growing up as a **middle-class boy** in Nepal has taught me the value of hard work, resourcefulness, and staying humble. Currently, I am building my technical foundation as a **Computer Engineering student at Ratna Rajya Secondary School**.
+                    </p>
+                    <p>
+                        My background teaches me to look at problems realistically. I use my skills as a **programmer** and **researcher** to seek out innovative solutions, while keeping my mind balanced through creative outlets like **singing** and **drawing**.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISION SECTION: Businessman aspirations & Lifestyle focus -->
+        <section id="vision" class="py-20 max-w-5xl mx-auto px-6 border-t border-slate-900/60">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-1">
+                    <h2 class="text-xs uppercase tracking-widest text-emerald-400 font-bold mb-2">02 / Future Ambition</h2>
+                    <h3 class="text-2xl font-bold text-white tracking-tight">Dreams & Lifestyle</h3>
+                </div>
+                <div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Businessman Dream Block -->
+                    <div class="bg-slate-950/30 border border-slate-900/80 p-6 rounded-2xl space-y-2">
+                        <div class="text-emerald-400 text-sm font-semibold"><i class="fa-solid fa-briefcase mr-1"></i> Business Mindset</div>
+                        <h4 class="text-lg font-bold text-white">The Entrepreneurial Dream</h4>
+                        <p class="text-xs text-slate-400 font-light leading-relaxed">
+                            Coming from a middle-class family, I want to build strong financial foundations through entrepreneurship. My dream is to become a businessman who creates valuable tech ventures, transforms ideas into sustainable businesses, and uplifts those around me.
+                        </p>
+                    </div>
+
+                    <!-- Easy Lifestyle Block -->
+                    <div class="bg-slate-950/30 border border-slate-900/80 p-6 rounded-2xl space-y-2">
+                        <div class="text-amber-400 text-sm font-semibold"><i class="fa-solid fa-couch mr-1"></i> Easy Living</div>
+                        <h4 class="text-lg font-bold text-white">An Easy & Peaceful Lifestyle</h4>
+                        <p class="text-xs text-slate-400 font-light leading-relaxed">
+                            I want to build a smart business ecosystem so that I can enjoy a comfortable, smooth, and stress-free life. My ultimate goal is an easy-going lifestyle with enough free time to explore melodies, sketch out my thoughts, and live peacefully.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TARGETED SEGMENTATION: Clear distinctions of your identity blocks -->
+        <section id="expertise" class="py-20 max-w-5xl mx-auto px-6 border-t border-slate-900/60 bg-gradient-to-b from-slate-950/20 to-transparent rounded-3xl">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-1">
+                    <h2 class="text-xs uppercase tracking-widest text-purple-400 font-bold mb-2">03 / Technical Identity</h2>
+                    <h3 class="text-2xl font-bold text-white tracking-tight">Programmer & Researcher</h3>
+                </div>
+                <div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Programmer detail slot -->
+                    <div class="bg-slate-950/50 border border-slate-900 p-6 rounded-2xl space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400">
+                            <i class="fa-solid fa-laptop-code text-lg"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-white">The Programmer</h4>
+                        <p class="text-xs text-slate-400 font-light leading-relaxed">
+                            Through my computer engineering classes at Ratna Rajya, I translate complex thoughts into operational script structures. Programming is how I apply structural solutions directly—writing functional web environments, automating scripts, and creating practical programs block by block.
+                        </p>
+                    </div>
+
+                    <!-- Researcher detail slot -->
+                    <div class="bg-slate-950/50 border border-slate-900 p-6 rounded-2xl space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400">
+                            <i class="fa-solid fa-microscope text-lg"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-white">The Researcher</h4>
+                        <p class="text-xs text-slate-400 font-light leading-relaxed">
+                            Building software requires a deep understanding of structural theory. As a tech researcher, I review documentation, explore software architectural patterns, and analyze technical constraints. This study process ensures that whatever code I write runs efficiently and securely.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPRESSIVE INTERACTION ELEMENTS: Hobbies section -->
+        <section id="hobbies" class="py-20 max-w-5xl mx-auto px-6 border-t border-slate-900/60">
+            <div class="mb-12">
+                <h2 class="text-xs uppercase tracking-widest text-cyan-400 font-bold mb-2">04 / Creative Balance</h2>
+                <h3 class="text-3xl font-bold text-white tracking-tight">Singing & Drawing</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Hobby Slot 1: Singing -->
+                <div class="bg-slate-950/30 backdrop-blur-md border border-slate-900/80 rounded-2xl overflow-hidden flex flex-col justify-between group transition-all duration-300">
+                    <div class="h-44 w-full overflow-hidden bg-slate-950 relative">
+                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=500&q=80" alt="Vocal acoustics placeholder illustration" class="w-full h-full object-cover opacity-40 group-hover:scale-105 transition-all duration-500">
+                    </div>
+                    <div class="p-6 space-y-2 flex-grow">
+                        <div class="text-cyan-400 text-xs font-mono uppercase tracking-wider"><i class="fa-solid fa-music mr-1"></i> Vocal Expression</div>
+                        <h4 class="text-lg font-bold text-white">Singing & Melody Exploration</h4>
+                        <p class="text-xs text-slate-400 font-light leading-relaxed">Music helps clear my head after long coding sessions. I study acoustic rhythms, exercise vocal performance, and appreciate complex musical structures.</p>
+                    </div>
+                </div>
+
+                <!-- Hobby Slot 2: Drawing -->
+                <div class="bg-slate-950/30 backdrop-blur-md border border-slate-900/80 rounded-2xl overflow-hidden flex flex-col justify-between group transition-all duration-300">
+                    <div class="h-44 w-full overflow-hidden bg-slate-950 relative">
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=500&q=80" alt="Sketching art instrument layout" class="w-full h-full object-cover opacity-40 group-hover:scale-105 transition-all duration-500">
+                    </div>
+                    <div class="p-6 space-y-2 flex-grow">
+                        <div class="text-pink-400 text-xs font-mono uppercase tracking-wider"><i class="fa-solid fa-bezier-curve mr-1"></i> Visual Art</div>
+                        <h4 class="text-lg font-bold text-white">Ink Sketches & Precise Drawing</h4>
+                        <p class="text-xs text-slate-400 font-light leading-relaxed">Drawing allows me to build spatial landscapes on paper. I create detailed pencil illustrations, fine line art patterns, and imaginative visual layouts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RECENT PROJECT RECAP ARRAYS -->
+        <section id="projects" class="py-20 max-w-5xl mx-auto px-6 border-t border-slate-900/60">
+            <div class="mb-12">
+                <h2 class="text-xs uppercase tracking-widest text-cyan-400 font-bold mb-2">05 / Practical Lab</h2>
+                <h3 class="text-3xl font-bold text-white tracking-tight">Active Deployments</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project card unit -->
+                <div class="group bg-slate-950/20 backdrop-blur-sm border border-slate-900 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-cyan-500/30 transition-all duration-300">
+                    <div class="h-44 w-full overflow-hidden bg-slate-950">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Software architectural blueprint visual matrix" class="w-full h-full object-cover opacity-60">
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-[10px] font-mono font-bold tracking-wider uppercase text-cyan-400 bg-cyan-950/50 px-2.5 py-1 rounded-md border border-cyan-800/30">Engineering Target</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-slate-700 group-hover:text-cyan-400 text-sm"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-white group-hover:text-cyan-400 tracking-tight">Personalized Hub Deployment</h4>
+                            <p class="text-xs text-slate-400 mt-2 font-light leading-relaxed">An advanced portfolio environment structured intentionally to cleanly list engineering logs and creative media outputs side by side.</p>
+                        </div>
+                        <div class="flex gap-2 mt-6">
+                            <span class="text-[10px] font-mono bg-slate-900/80 text-slate-400 px-2.5 py-1 rounded-md border border-slate-800">HTML5</span>
+                            <span class="text-[10px] font-mono bg-slate-900/80 text-slate-400 px-2.5 py-1 rounded-md border border-slate-800">TailwindCSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research case analysis unit -->
+                <div class="group bg-slate-950/20 backdrop-blur-sm border border-slate-900 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-purple-500/30 transition-all duration-300">
+                    <div class="h-44 w-full overflow-hidden bg-slate-950">
+                        <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80" alt="Tech trends graph analysis chart pattern" class="w-full h-full object-cover opacity-60">
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-[10px] font-mono font-bold tracking-wider uppercase text-purple-400 bg-purple-950/50 px-2.5 py-1 rounded-md border border-purple-800/30">Research Review</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-slate-700 group-hover:text-purple-400 text-sm"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-white group-hover:text-purple-400 tracking-tight">Algorithmic Systems Discovery</h4>
+                            <p class="text-xs text-slate-400 mt-2 font-light leading-relaxed">A compiled research tracker noting performance benchmarks across modern computing modules and user interaction patterns.</p>
+                        </div>
+                        <div class="flex gap-2 mt-6">
+                            <span class="text-[10px] font-mono bg-slate-900/80 text-slate-400 px-2.5 py-1 rounded-md border border-slate-800">Documentation</span>
+                            <span class="text-[10px] font-mono bg-slate-900/80 text-slate-400 px-2.5 py-1 rounded-md border border-slate-800">Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INPUT FIELDS CAPTURE INTERFACE: Operational contact grid panel -->
+        <section id="contact" class="py-20 max-w-5xl mx-auto px-6 border-t border-slate-900/60 mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-1">
+                    <h2 class="text-xs uppercase tracking-widest text-cyan-400 font-bold mb-2">06 / Channel Access</h2>
+                    <h3 class="text-2xl font-bold text-white tracking-tight">Initiate Inquiry</h3>
+                </div>
+                <div class="md:col-span-3">
+                    <form class="space-y-5 bg-slate-950/40 backdrop-blur-md p-8 rounded-2xl border border-slate-900/80 relative" onsubmit="event.preventDefault(); alert('Message successfully sent!');">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-[10px] uppercase tracking-wider text-slate-500 font-bold mb-2">Your Name</label>
+                                <input type="text" placeholder="Name" required class="w-full bg-slate-900/40 border border-slate-800/60 rounded-xl px-4 py-3 text-xs text-slate-200 focus:outline-none focus:border-cyan-500/60 transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-[10px] uppercase tracking-wider text-slate-500 font-bold mb-2">Your Email</label>
+                                <input type="email" placeholder="name@email.com" required class="w-full bg-slate-900/40 border border-slate-800/60 rounded-xl px-4 py-3 text-xs text-slate-200 focus:outline-none focus:border-cyan-500/60 transition-all">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-[10px] uppercase tracking-wider text-slate-500 font-bold mb-2">Your Message</label>
+                            <textarea rows="4" placeholder="Type out details here..." required class="w-full bg-slate-900/40 border border-slate-800/60 rounded-xl px-4 py-3 text-xs text-slate-200 focus:outline-none focus:border-cyan-500/60 transition-all"></textarea>
+                        </div>
+                        <button type="submit" class="w-full sm:w-auto px-6 py-3 text-xs font-bold uppercase tracking-widest text-slate-950 bg-white hover:bg-cyan-400 rounded-xl transition-all cursor-pointer active:scale-95">
+                            Transmit Message <i class="fa-regular fa-paper-plane ml-1"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- BOTTOM BOUNDARY TERMINAL FOOTER CONTAINER -->
+        <footer class="bg-slate-950/60 backdrop-blur-md text-slate-600 text-[11px] py-10 border-t border-slate-900/60 text-center font-mono">
+            <p>&copy; 2026 Aayush Kandel. Built from Gaidakot, Nepal.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
